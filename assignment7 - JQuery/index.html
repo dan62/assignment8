@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assignment 7</title>
+ <script src="JQuery/main.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+</head>
+<body>
+<h1>Simple Sign-Up Page</h1><br />
+<form id="Form1">
+   Email:
+  <input type="email" minlength="8" name="email"/>
+  <br><br>
+  Username:
+  <input type="text" minlength="8" name="username" >
+  <br><br>
+  Password:
+  <input type="password" minlength="8" name="password1">
+  <br><br>
+  Password Confirmation:
+  <input type="password" minlength="8" name="password2" >
+  <br><br>
+  <input type="submit" value="Sign-Up">
+</form>
+<script>
+$("#Form1").validate();
+</script>
+</body>
+</html>
